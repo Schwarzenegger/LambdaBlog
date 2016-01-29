@@ -10,8 +10,8 @@ defmodule LambdaBlog.User do
     timestamps
   end
 
-  @required_fields ~w(name email bio)
-  @optional_fields ~w()
+  @required_fields ~w(name email)
+  @optional_fields ~w(bio)
 
   @doc """
   Creates a changeset based on the `model` and `params`.

@@ -15,4 +15,9 @@ defmodule LambdaBlog.UserTest do
     changeset = User.changeset(%User{}, @invalid_attrs)
     refute changeset.valid?
   end
+
+  test "bio is not required" do
+    changeset = User.changeset(%User{}, Map.delete(@valid_attrs, :bio))
+    assert changeset.valid?
+  end
 end
