@@ -35,8 +35,7 @@ config :phoenix, :stacktrace_depth, 20
 # Configure your database
 config :lambda_blog, LambdaBlog.Repo,
   adapter: Ecto.Adapters.Postgres,
-  username: "postgres",
-  password: "postgres",
+  username: "schwarzenegger",
   database: "lambda_blog_dev",
   hostname: "localhost",
   pool_size: 10
